@@ -1,0 +1,19 @@
+nav{
+    display: flex;
+    align-items: center;
+    
+}
+ul{
+    gap: 16px;
+   list-style-type: none;
+}
+
+.article-card{
+background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}

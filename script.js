@@ -10,8 +10,38 @@ function getData() {
        // Traitez les données comme vous le souhaitez
        console.log('Données récupérées du fichier JSON :', data);
        /// ON ECRIT LE CODE ICI ! 
-      let nomJournal = document.getElementById("nomJournal")
+      let theme = data.theme[0];
+      console.log(theme);
+      
       console.log(nomJournal);
+      // ÉTAPE 2 : Sélectionner un conteneur HTML existant pour y insérer les films
+
+       let articleContainer = document.getElementById('article-container');
+      //  console.log(articleContainer);
+       
+      // // Utilisez document.createElement() pour créer un élément <div>
+       let articleCard = document.createElement('div'); 
+        // // 3.2 Ajouter une classe CSS à cette carte
+        // // Utilisez la propriété .className
+       articleCard.className = "article-card"
+      console.log(articleCard);
+      
+
+      
+      
+      // let maineArticle = document.createElement('div');
+      // maineArticle.className = "section-article"
+
+      // let articlePoster =  document.createElement('img')
+      // let articleTitle = document.createElement('p')
+      // let themeTitle = document.createElement('p')
+      // let dateTitle = document.createElement('p')
+      // let articleDescription = document.createElement('p')
+
+      
+
+
+
       
 
       
