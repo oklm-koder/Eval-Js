@@ -10,6 +10,8 @@ function getData() {
        // Traitez les données comme vous le souhaitez
        console.log('Données récupérées du fichier JSON :', data);
        /// ON ECRIT LE CODE ICI ! 
+      let nomJournal = document.getElementById("nomJournal")
+      console.log(nomJournal);
       
 
       
