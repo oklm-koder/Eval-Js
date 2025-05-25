@@ -1,0 +1,97 @@
+{
+  "journal": {
+    "nomJournal": "SoulsVerse Weekly",
+    "phraseAccroche": "Explorez les ténèbres, survivez à l’impossible",
+    "texteAppelAction": "Rejoignez notre communauté de joueurs intrépides pour des analyses, lore et astuces chaque semaine",
+    "articlePrincipal": {
+      "titre": "Elden Ring : Héritier et sommet du genre Souls-like ?",
+      "description": "Analyse approfondie du chef-d'œuvre de FromSoftware et son impact sur le paysage vidéoludique.",
+      "date": "21 Mai 2025",
+      "theme": "Jeu culte",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg"
+    },
+    "articles": [
+      {
+        "titre": "Pourquoi les jeux Souls-like fascinent autant les joueurs",
+        "date": "15 Mai 2025",
+        "theme": "Phénomène de jeu",
+        "image": "https://cdn.pixabay.com/photo/2020/06/30/15/42/fantasy-5355025_1280.jpg"
+      },
+      {
+        "titre": "Top 5 des Souls-like en dehors de FromSoftware à essayer absolument",
+        "date": "10 Mai 2025",
+        "theme": "Recommandations",
+        "image": "https://cdn.pixabay.com/photo/2021/12/13/16/26/game-6867232_1280.jpg"
+      },
+      {
+        "titre": "Le level design dans Dark Souls : une leçon de game design",
+        "date": "5 Mai 2025",
+        "theme": "Conception de jeu",
+        "image": "https://cdn.pixabay.com/photo/2020/02/01/10/31/castle-4812136_1280.jpg"
+      },
+      {
+        "titre": "Comment débuter dans les Souls-like sans perdre la tête",
+        "date": "1er Mai 2025",
+        "theme": "Guides & conseils",
+        "image": "https://cdn.pixabay.com/photo/2017/12/28/18/43/strategy-3041867_1280.jpg"
+      },
+      {
+        "titre": "Boss emblématiques : du level design au mythe",
+        "date": "26 Avril 2025",
+        "theme": "Iconographie",
+        "image": "https://cdn.pixabay.com/photo/2021/07/28/07/47/knight-6501682_1280.jpg"
+      }
+    ],
+    "themes": [
+      {
+        "nom": "Jeu culte",
+        "description": "Analyses des titres majeurs qui ont défini le genre Souls-like."
+      },
+      {
+        "nom": "Phénomène de jeu",
+        "description": "Pourquoi les joueurs sont attirés par la difficulté, le lore cryptique et l’ambiance unique."
+      },
+      {
+        "nom": "Recommandations",
+        "description": "Sélections de jeux et coups de cœur dans la lignée des Souls."
+      },
+      {
+        "nom": "Conception de jeu",
+        "description": "Exploration des mécaniques, de la narration environnementale et du level design."
+      },
+      {
+        "nom": "Guides & conseils",
+        "description": "Astuces pour progresser, choisir sa classe ou vaincre les boss les plus coriaces."
+      },
+      {
+        "nom": "Iconographie",
+        "description": "Études visuelles des créatures, armes, lieux et symboles emblématiques."
+      }
+    ],
+    "auteurs": [
+      {
+        "prenom": "Claire",
+        "typeExperience": "Narrative designer",
+        "presentation": "Spécialiste de la narration environnementale, j’étudie comment les jeux comme Dark Souls racontent sans parler."
+      },
+      {
+        "prenom": "Thomas",
+        "typeExperience": "Game analyst",
+        "presentation": "Passionné de difficulté et de design système, j’analyse les mécaniques qui définissent les Souls-like."
+      },
+      {
+        "prenom": "Elena",
+        "typeExperience": "Streamer & speedrunneuse",
+        "presentation": "Je parcours les Souls-like à toute vitesse, partageant tips et lore avec ma communauté."
+      }
+    ]
+  }
+}
+
+
+
+
+
+
+
+
