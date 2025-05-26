@@ -8,12 +8,29 @@ ul{
    list-style-type: none;
 }
 
-.article-card{
-background: white;
+.themes-card{
+background: rgb(7, 17, 136);
   border: 1px solid #ccc;
   border-radius: 10px;
   width: 250px;
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
 
+}
+h1 ,h2{
+ color: black;
+}
+
+.nomJournal{
+color: black;
+
+}
+
+/* #themes-container{
+
+  display: flex;
+} */
+.divContainer{
+  display: flex;
 }
