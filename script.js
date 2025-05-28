@@ -20,6 +20,7 @@ function getData() {
       // ÉTAPE 2 : Sélectionner un conteneur HTML existant pour y insérer les films
 
        let themesContainer = document.getElementById('themes-container');
+       let post = document.getElementById('post');
       //  console.log(articleContainer);
        
       // // Utilisez document.createElement() pour créer un élément <div>
@@ -34,9 +35,11 @@ function getData() {
         // // 3.3 Créer les éléments suivants avec createElement() :
         let nomjournal = document.createElement('h2')
         let phraseAccroche = document.createElement('h1')
+        let c
         
         // let nomTheme = document.createElement('h2')
         //  let descriptionTheme = document.createElement('p')
+
 
         // console.log(nomjournal);
         // // 3.4 Remplir ces éléments :
@@ -51,37 +54,39 @@ function getData() {
 
         themesContainer.appendChild(nomjournal)
         themesContainer.appendChild(phraseAccroche)
+        
         // themesCard.appendChild(nomTheme)
         // themesCard.appendChild(descriptionTheme)
 
        // themesContainer.appendChild(themesCard)
+      let divContainer =document.createElement("div")
+      themesContainer.appendChild(divContainer)
+      divContainer.className = "divContainer"
 
         themes.forEach(theme => {
-          // 
-           let themesCard = document.createElement('div');
           
-           divContainer.className = "divContainer"
+           let themesCard = document.createElement('div');
+
            themesCard.className =" themes-card"
-           
+           themesContainer.className = "themesContainer"
 
            let nomTheme = document.createElement('h2')
-          let descriptionTheme = document.createElement('p')
+         let descriptionTheme = document.createElement('p')
 
          nomTheme.textContent = theme.nom
          descriptionTheme.textContent = theme.description
-         
-         divContainer.appendChild(themesCard)
 
         themesCard.appendChild(nomTheme)
         themesCard.appendChild(descriptionTheme)
         
 
-        themesContainer.appendChild(themesCard)
-
-
-         
-
+        divContainer.appendChild(themesCard)
         });
+
+
+
+        let articlePrincipal = journal.articlePrincipal
+        console.log(articlePrincipal);
         
 
 
