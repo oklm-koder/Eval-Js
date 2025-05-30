@@ -11,6 +11,12 @@ function getData() {
        console.log('Données récupérées du fichier JSON :', data);
         let journal = data.journal
        console.log(journal);
+
+       let articlePrincipal = journal.articlePrincipal
+        console.log(articlePrincipal);
+        let articles = journal.articles[0]
+        console.log(articles);
+        
        
        /// ON ECRIT LE CODE ICI ! 
       let themes = journal.themes;
@@ -21,12 +27,23 @@ function getData() {
 
        let themesContainer = document.getElementById('themes-container');
        let post = document.getElementById('post');
+       let ProjetContainer = document.getElementById("projetContainer")
+       
+       
+       
       //  console.log(articleContainer);
        
       // // Utilisez document.createElement() pour créer un élément <div>
       //  let themesCard = document.createElement('div');
       //  console.log(themesCard);
+        let projetPrincipal = document.createElement('div');
+        projetPrincipal.className ="Projet-principal"
+
+        let cardsArt = document.createElement("div")
         
+        
+
+
         // // 3.2 Ajouter une classe CSS à cette carte
         // // Utilisez la propriété .className
         // themesCard.className =" themes-card"
@@ -35,7 +52,24 @@ function getData() {
         // // 3.3 Créer les éléments suivants avec createElement() :
         let nomjournal = document.createElement('h2')
         let phraseAccroche = document.createElement('h1')
-        let c
+        let imgProjetP = document.createElement("img")
+
+// ----------------------------------------------------------------
+
+        let titreArt1 =document.createElement("h1")
+        let descriptionArt1 =document.createElement("p")
+        let dateArt1 =document.createElement("h3")
+        let themeArt1 =document.createElement("h3")
+
+        let btnArt1 =document.createElement("a")
+        btnArt1.className = "bouton"
+//  ----------------------------------------------------
+let titresArt = document.createElement("h1")  
+let datesArt =document.createElement("p") 
+let themesArt =document.createElement("p") 
+let imgsArt =document.createElement("img")   
+
+        
         
         // let nomTheme = document.createElement('h2')
         //  let descriptionTheme = document.createElement('p')
@@ -45,6 +79,20 @@ function getData() {
         // // 3.4 Remplir ces éléments :
         nomjournal.textContent = journal.nomJournal
         phraseAccroche.textContent= journal.phraseAccroche
+// -----------------------------------------------------------
+        imgProjetP.src = articlePrincipal.image
+        titreArt1.textContent = articlePrincipal.titre
+        descriptionArt1.textContent =articlePrincipal.description
+        dateArt1.textContent = articlePrincipal.date
+        themeArt1.textContent = articlePrincipal.theme
+        btnArt1.textContent = "lire article"
+// ------------------------------------------------------------
+      imgsArt.src = articles.image
+      themesArt.textContent = articles.theme
+      datesArt.textContent = articles.date
+      titresArt.textContent = articles.titre
+
+
         // nomTheme.textContent = themes.nom
         // descriptionTheme.textContent = themes.description
        
@@ -54,6 +102,22 @@ function getData() {
 
         themesContainer.appendChild(nomjournal)
         themesContainer.appendChild(phraseAccroche)
+        // -----------------------------------------------
+        post.appendChild(imgProjetP)
+        post.appendChild(titreArt1)
+        post.appendChild(dateArt1)
+        post.appendChild(themeArt1)
+        post.appendChild(descriptionArt1)
+        post.appendChild(btnArt1)
+      
+        // ----------------------------------------------
+        cardsArt.appendChild(imgsArt)
+        cardsArt.appendChild(titresArt)
+        cardsArt.appendChild(themesArt)
+        cardsArt.appendChild(datesArt)
+        ProjetContainer.appendChild(cardsArt)
+        
+        
         
         // themesCard.appendChild(nomTheme)
         // themesCard.appendChild(descriptionTheme)
@@ -62,6 +126,8 @@ function getData() {
       let divContainer =document.createElement("div")
       themesContainer.appendChild(divContainer)
       divContainer.className = "divContainer"
+
+      // post.appendChild(projetPrincipal)
 
         themes.forEach(theme => {
           
@@ -85,8 +151,7 @@ function getData() {
 
 
 
-        let articlePrincipal = journal.articlePrincipal
-        console.log(articlePrincipal);
+        
         
 
 

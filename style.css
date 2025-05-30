@@ -27,10 +27,36 @@ color: black;
 
 }
 
-/* #themes-container{
-
-  display: flex;
-}  */
+ #themes-container{
+margin: 16px;
+}  
 .divContainer{
   display: flex;
+}
+
+/* .Projet-principal{
+
+}  */
+
+.bouton{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   text-decoration: none;
+   padding: 8px 16px;
+   width: fit-content;
+   font-weight: 500;
+   transition: all .3s ease-in-out;
+     background: #8005F2;
+   color: white;
+}
+
+/* .bouton.primaire{
+   background: #8005F2;
+   color: white;
+} */
+
+.bouton:hover{
+   background: #c38ff5;
 }
