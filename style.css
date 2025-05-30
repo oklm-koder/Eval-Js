@@ -1,3 +1,6 @@
+body{
+   margin: 0%;
+}
 nav{
     display: flex;
     align-items: center;
@@ -60,3 +63,42 @@ margin: 16px;
 .bouton:hover{
    background: #c38ff5;
 }
+.img1{
+
+   
+   width: 100%;
+}
+
+.info-art-prnicipal{
+
+   margin: 36px;
+   margin-top: 8px;
+}
+.theme-date{
+   display: flex;
+   gap: 8px;
+}
+
+
+
+
+.transi{
+   display: flex;
+   justify-content: space-around;
+
+}
+.carte-des-article{
+display: flex;
+margin: 8px;
+}
+.info-des-articles{
+
+   display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+
+ .img-articles{
+    height: 250px;
+    width: auto; 
+} 

@@ -39,11 +39,19 @@ function getData() {
         let projetPrincipal = document.createElement('div');
         projetPrincipal.className ="Projet-principal"
 
+        
+        let textProjetPrincipale = document.createElement("div")
+        textProjetPrincipale.className ="info-art-prnicipal"
+
+        let themeEtDate =document.createElement("div")
+        themeEtDate.className ="theme-date"
+
         let cardsArt = document.createElement("div")
-        
-        
+        cardsArt.className ="carte-des-article"
 
-
+        let infoArticles =document.createElement("div")
+        infoArticles.className = "info-des-articles"
+        
         // // 3.2 Ajouter une classe CSS à cette carte
         // // Utilisez la propriété .className
         // themesCard.className =" themes-card"
@@ -53,6 +61,7 @@ function getData() {
         let nomjournal = document.createElement('h2')
         let phraseAccroche = document.createElement('h1')
         let imgProjetP = document.createElement("img")
+        imgProjetP.className = "img1"
 
 // ----------------------------------------------------------------
 
@@ -68,6 +77,9 @@ let titresArt = document.createElement("h1")
 let datesArt =document.createElement("p") 
 let themesArt =document.createElement("p") 
 let imgsArt =document.createElement("img")   
+imgsArt.className ="img-articles"
+ let btnArt =document.createElement("a")
+    btnArt.className = "bouton"
 
         
         
@@ -91,6 +103,7 @@ let imgsArt =document.createElement("img")
       themesArt.textContent = articles.theme
       datesArt.textContent = articles.date
       titresArt.textContent = articles.titre
+       btnArt.textContent = "lire article"
 
 
         // nomTheme.textContent = themes.nom
@@ -103,18 +116,39 @@ let imgsArt =document.createElement("img")
         themesContainer.appendChild(nomjournal)
         themesContainer.appendChild(phraseAccroche)
         // -----------------------------------------------
+        // Post Principal
+        
+
+        themeEtDate.appendChild(themeArt1)
+        themeEtDate.appendChild(dateArt1)
         post.appendChild(imgProjetP)
-        post.appendChild(titreArt1)
-        post.appendChild(dateArt1)
-        post.appendChild(themeArt1)
-        post.appendChild(descriptionArt1)
-        post.appendChild(btnArt1)
+        textProjetPrincipale.appendChild(titreArt1)
+        textProjetPrincipale.appendChild(themeEtDate)
+ 
+        textProjetPrincipale.appendChild(descriptionArt1)
+        textProjetPrincipale.appendChild(btnArt1)
+        
+
+        post.appendChild(textProjetPrincipale)
+        
+
+
+
+        
+        
       
         // ----------------------------------------------
+        // Autre Article
         cardsArt.appendChild(imgsArt)
-        cardsArt.appendChild(titresArt)
-        cardsArt.appendChild(themesArt)
-        cardsArt.appendChild(datesArt)
+        infoArticles.appendChild(titresArt)
+        infoArticles.appendChild(themesArt)
+        infoArticles.appendChild(datesArt)
+        infoArticles.appendChild(btnArt)
+        cardsArt.appendChild(infoArticles)
+      
+        
+
+        
         ProjetContainer.appendChild(cardsArt)
         
         
@@ -175,3 +209,5 @@ let imgsArt =document.createElement("img")
  getData();
 
  ///ON écrit les fonctions ici
+
+//  https://i.pinimg.com/736x/8b/90/70/8b9070eaa36b7cd89a1f16dba3a955e2.jpg
