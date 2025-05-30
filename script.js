@@ -14,7 +14,7 @@ function getData() {
 
        let articlePrincipal = journal.articlePrincipal
         console.log(articlePrincipal);
-        let articles = journal.articles[0]
+        let articles = journal.articles
         console.log(articles);
         
        
@@ -46,11 +46,14 @@ function getData() {
         let themeEtDate =document.createElement("div")
         themeEtDate.className ="theme-date"
 
-        let cardsArt = document.createElement("div")
-        cardsArt.className ="carte-des-article"
+        // let cardsArt = document.createElement("div")
+        // cardsArt.className ="carte-des-article"
 
-        let infoArticles =document.createElement("div")
-        infoArticles.className = "info-des-articles"
+        // let infoArticles =document.createElement("div")
+        // infoArticles.className = "info-des-articles"
+
+        // let themeEtDateArticles = document.createElement("div")
+        // themeEtDateArticles.className = "theme-date"
         
         // // 3.2 Ajouter une classe CSS à cette carte
         // // Utilisez la propriété .className
@@ -73,13 +76,13 @@ function getData() {
         let btnArt1 =document.createElement("a")
         btnArt1.className = "bouton"
 //  ----------------------------------------------------
-let titresArt = document.createElement("h1")  
-let datesArt =document.createElement("p") 
-let themesArt =document.createElement("p") 
-let imgsArt =document.createElement("img")   
-imgsArt.className ="img-articles"
- let btnArt =document.createElement("a")
-    btnArt.className = "bouton"
+// let titresArt = document.createElement("h1")  
+// let datesArt =document.createElement("p") 
+// let themesArt =document.createElement("p") 
+// let imgsArt =document.createElement("img")   
+// imgsArt.className ="img-articles"
+//  let btnArt =document.createElement("a")
+//     btnArt.className = "bouton"
 
         
         
@@ -99,11 +102,11 @@ imgsArt.className ="img-articles"
         themeArt1.textContent = articlePrincipal.theme
         btnArt1.textContent = "lire article"
 // ------------------------------------------------------------
-      imgsArt.src = articles.image
-      themesArt.textContent = articles.theme
-      datesArt.textContent = articles.date
-      titresArt.textContent = articles.titre
-       btnArt.textContent = "lire article"
+      // imgsArt.src = articles.image
+      // themesArt.textContent = articles.theme
+      // datesArt.textContent = articles.date
+      // titresArt.textContent = articles.titre
+      //  btnArt.textContent = "lire article"
 
 
         // nomTheme.textContent = themes.nom
@@ -139,17 +142,18 @@ imgsArt.className ="img-articles"
       
         // ----------------------------------------------
         // Autre Article
-        cardsArt.appendChild(imgsArt)
-        infoArticles.appendChild(titresArt)
-        infoArticles.appendChild(themesArt)
-        infoArticles.appendChild(datesArt)
-        infoArticles.appendChild(btnArt)
-        cardsArt.appendChild(infoArticles)
+        // cardsArt.appendChild(imgsArt)
+        // infoArticles.appendChild(titresArt)
+        // infoArticles.appendChild(themeEtDateArticles)
+        // themeEtDateArticles.appendChild(themesArt)
+        // themeEtDateArticles.appendChild(datesArt)
+        // infoArticles.appendChild(btnArt)
+        // cardsArt.appendChild(infoArticles)
       
         
 
         
-        ProjetContainer.appendChild(cardsArt)
+        // ProjetContainer.appendChild(cardsArt)
         
         
         
@@ -181,6 +185,50 @@ imgsArt.className ="img-articles"
         
 
         divContainer.appendChild(themesCard)
+        });
+
+
+        articles.forEach(articles => {
+
+          let cardsArt = document.createElement("div")
+        cardsArt.className ="carte-des-article"
+
+        let infoArticles =document.createElement("div")
+        infoArticles.className = "info-des-articles"
+
+        let themeEtDateArticles = document.createElement("div")
+        themeEtDateArticles.className = "theme-date"
+
+        let titresArt = document.createElement("h1")  
+       let datesArt =document.createElement("p") 
+       let themesArt =document.createElement("p") 
+       let imgsArt =document.createElement("img")   
+       imgsArt.className ="img-articles"
+       let btnArt =document.createElement("a")
+       btnArt.className = "bouton"
+
+       imgsArt.src = articles.image
+      themesArt.textContent = articles.theme
+      datesArt.textContent = articles.date
+      titresArt.textContent = articles.titre
+       btnArt.textContent = "lire article"
+
+
+       cardsArt.appendChild(imgsArt)
+        infoArticles.appendChild(titresArt)
+        infoArticles.appendChild(themeEtDateArticles)
+        themeEtDateArticles.appendChild(themesArt)
+        themeEtDateArticles.appendChild(datesArt)
+        infoArticles.appendChild(btnArt)
+        cardsArt.appendChild(infoArticles)
+      
+        
+
+        
+        ProjetContainer.appendChild(cardsArt)
+        
+
+          
         });
 
 
