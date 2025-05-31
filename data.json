@@ -70,16 +70,19 @@
     ],
     "auteurs": [
       {
+        "image":"https://i.pinimg.com/736x/2a/06/09/2a060903e3060d21d49f1bf7c7339a71.jpg",
         "prenom": "Claire",
         "typeExperience": "Narrative designer",
         "presentation": "Spécialiste de la narration environnementale, j’étudie comment les jeux comme Dark Souls racontent sans parler."
       },
       {
+        "image":"https://i.pinimg.com/736x/60/2b/9c/602b9c091ceae288cfede15014bd77db.jpg",
         "prenom": "Thomas",
         "typeExperience": "Game analyst",
         "presentation": "Passionné de difficulté et de design système, j’analyse les mécaniques qui définissent les Souls-like."
       },
       {
+        "image":"https://i.pinimg.com/736x/26/a0/0c/26a00cb51c5be2df132804959cff9c55.jpg",
         "prenom": "Elena",
         "typeExperience": "Streamer & speedrunneuse",
         "presentation": "Je parcours les Souls-like à toute vitesse, partageant tips et lore avec ma communauté."

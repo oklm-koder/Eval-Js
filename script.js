@@ -16,6 +16,10 @@ function getData() {
         console.log(articlePrincipal);
         let articles = journal.articles
         console.log(articles);
+
+        let auteur = journal.auteurs
+        console.log(auteur);
+        
         
        
        /// ON ECRIT LE CODE ICI ! 
@@ -28,6 +32,8 @@ function getData() {
        let themesContainer = document.getElementById('themes-container');
        let post = document.getElementById('post');
        let ProjetContainer = document.getElementById("projetContainer")
+       let auteurContainer = document.getElementById("auteur-container")
+      
        
        
        
@@ -45,6 +51,15 @@ function getData() {
 
         let themeEtDate =document.createElement("div")
         themeEtDate.className ="theme-date"
+        let ensenbleAuteur = document.createElement("div")
+        ensenbleAuteur.className="ensenble-des-auteur"
+
+        // let infoAuteur = document.createElement("article")
+        // infoAuteur.className ="info-auteur"
+        // let texteAuteur = document.createElement("div")
+        // texteAuteur.className ="texte-auteur"
+       
+        
 
         // let cardsArt = document.createElement("div")
         // cardsArt.className ="carte-des-article"
@@ -62,7 +77,9 @@ function getData() {
       
         // // 3.3 Créer les éléments suivants avec createElement() :
         let nomjournal = document.createElement('h2')
+        nomjournal.className ="transi"
         let phraseAccroche = document.createElement('h1')
+        phraseAccroche.className ="transi"
         let imgProjetP = document.createElement("img")
         imgProjetP.className = "img1"
 
@@ -84,8 +101,16 @@ function getData() {
 //  let btnArt =document.createElement("a")
 //     btnArt.className = "bouton"
 
+
         
-        
+// ------------------------------------
+
+// let imageAuteur = document.createElement("img")
+// imageAuteur.className ="image-auteur"
+// let prenomAuteur = document.createElement("p")
+// let ExperienceAuteur = document.createElement("p")
+// let presentationAuteur = document.createElement("p")
+
         // let nomTheme = document.createElement('h2')
         //  let descriptionTheme = document.createElement('p')
 
@@ -111,7 +136,13 @@ function getData() {
 
         // nomTheme.textContent = themes.nom
         // descriptionTheme.textContent = themes.description
-       
+//  --------------------------------------------------------
+// Auteur
+// imageAuteur.src = auteur.image
+// prenomAuteur.textContent =auteur.prenom
+// ExperienceAuteur.textContent =auteur.typeExperience
+// presentationAuteur.textContent =auteur.presentation
+
 
       // // 3.5 Ajouter chaque élément dans la carte :
         // // Utilisez .appendChild() pour ajouter les éléments créés dans la div de la carte
@@ -140,7 +171,7 @@ function getData() {
         
         
       
-        // ----------------------------------------------
+// ----------------------------------------------
         // Autre Article
         // cardsArt.appendChild(imgsArt)
         // infoArticles.appendChild(titresArt)
@@ -149,14 +180,22 @@ function getData() {
         // themeEtDateArticles.appendChild(datesArt)
         // infoArticles.appendChild(btnArt)
         // cardsArt.appendChild(infoArticles)
-      
+// -------------------------------------------
+        // Auteur
+        // infoAuteur.appendChild(imageAuteur)
+        // infoAuteur.appendChild(texteAuteur)
+        // texteAuteur.appendChild(prenomAuteur)
+        // texteAuteur.appendChild(ExperienceAuteur)
+        // texteAuteur.appendChild(presentationAuteur)
+        
+        // auteurContainer.appendChild(infoAuteur)
         
 
-        
+
+
+
         // ProjetContainer.appendChild(cardsArt)
-        
-        
-        
+    
         // themesCard.appendChild(nomTheme)
         // themesCard.appendChild(descriptionTheme)
 
@@ -232,8 +271,38 @@ function getData() {
         });
 
 
+      auteurContainer.appendChild(ensenbleAuteur)
+       auteur.forEach(auteur => {
+          let infoAuteur = document.createElement("article")
+         infoAuteur.className ="info-auteur"
+         let texteAuteur = document.createElement("div")
+        texteAuteur.className ="texte-auteur"
 
+
+        let imageAuteur = document.createElement("img")
+imageAuteur.className ="image-auteur"
+let prenomAuteur = document.createElement("p")
+let ExperienceAuteur = document.createElement("p")
+let presentationAuteur = document.createElement("p")
+
+imageAuteur.src = auteur.image
+prenomAuteur.textContent =auteur.prenom
+ExperienceAuteur.textContent =auteur.typeExperience
+presentationAuteur.textContent =auteur.presentation
+
+        infoAuteur.appendChild(imageAuteur)
+        infoAuteur.appendChild(texteAuteur)
+        texteAuteur.appendChild(prenomAuteur)
+        texteAuteur.appendChild(ExperienceAuteur)
+        texteAuteur.appendChild(presentationAuteur)
         
+        auteurContainer.appendChild(infoAuteur)
+        ensenbleAuteur.appendChild(infoAuteur)
+        
+
+       
+          
+        });
         
 
 
