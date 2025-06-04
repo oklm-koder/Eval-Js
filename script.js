@@ -33,8 +33,36 @@ function getData() {
        let post = document.getElementById('post');
        let ProjetContainer = document.getElementById("projetContainer")
        let auteurContainer = document.getElementById("auteur-container")
+      // -----------------------------------
+      //  Les Theme Dans La Nav
       
-       
+      let theme1 = document.getElementById("theme1")
+      let theme2 = document.getElementById("theme2")
+      let theme3 = document.getElementById("theme3")
+      let theme4 = document.getElementById("theme4")
+      let theme5 = document.getElementById("theme5")
+      let theme6 = document.getElementById("theme6")
+
+      let contTheme1= themes[0].nom
+      let contTheme2= themes[1].nom
+      let contTheme3= themes[2].nom
+      let contTheme4= themes[3].nom
+      let contTheme5= themes[4].nom
+      let contTheme6= themes[5].nom
+
+      
+      theme1.textContent =contTheme1
+      theme2.textContent =contTheme2
+      theme3.textContent =contTheme3
+      theme4.textContent =contTheme4
+      theme5.textContent =contTheme5
+      theme6.textContent =contTheme6
+      
+
+
+      
+      
+
        
        
       //  console.log(articleContainer);
@@ -85,12 +113,12 @@ function getData() {
 
 // ----------------------------------------------------------------
 
-        let titreArt1 =document.createElement("h1")
+        let titreArt1 = document.createElement("h1")
         let descriptionArt1 =document.createElement("p")
-        let dateArt1 =document.createElement("h3")
+        let dateArt1 = document.createElement("h3")
         let themeArt1 =document.createElement("h3")
 
-        let btnArt1 =document.createElement("a")
+        let btnArt1 = document.createElement("a")
         btnArt1.className = "bouton"
 //  ----------------------------------------------------
 // let titresArt = document.createElement("h1")  

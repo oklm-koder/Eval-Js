@@ -1,10 +1,22 @@
 body{
    margin: 0%;
 }
+
 nav{
+   display: flex;
+
+}
+ #logo-theme{
     display: flex;
-    align-items: center;
+   align-items: center;
     
+} 
+/* .logo{
+   height: 30px;
+   width: 30px;
+} */
+ul#logo-theme {
+    gap: 50px;
 }
 ul{
     gap: 16px;
