@@ -266,7 +266,7 @@ function getData() {
         let themeEtDateArticles = document.createElement("div")
         themeEtDateArticles.className = "theme-date"
 
-        let titresArt = document.createElement("h1")  
+        let titresArt = document.createElement("h2")  
        let datesArt =document.createElement("p") 
        let themesArt =document.createElement("p") 
        let imgsArt =document.createElement("img")   
